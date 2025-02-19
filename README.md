@@ -9,3 +9,5 @@ https://gin-gonic.com/docs/
 https://blog.logrocket.com/rest-api-golang-gin-gorm/#what-is-gin
 
 https://zaahidali.medium.com/mastering-rest-apis-with-the-go-gin-framework-b512ad785fdd
+
+https://www.allhandsontech.com/programming/golang/web-app-sqlite-go/
