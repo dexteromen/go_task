@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "f9cde01b-a8b4-4279-9038-95b715b09fc4",
+		"name": "Go-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42467553"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Task 1\",\r\n    \"description\": \"description of task 1\",\r\n    \"due_date\": \"22-02-2025 T:11:30\",\r\n    \"status\": \"pending\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Task 1 Updated\",\n    \"description\": \"Updated description 1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks/bb287703-79d1-4637-bb14-f5099173ba65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks",
+						"bb287703-79d1-4637-bb14-f5099173ba65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status Update By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"pending\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks/bc467a5e-f6d9-4658-9e5f-846ee0f570ff/status/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks",
+						"bc467a5e-f6d9-4658-9e5f-846ee0f570ff",
+						"status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks/bc467a5e-f6d9-4658-9e5f-846ee0f570ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks",
+						"bc467a5e-f6d9-4658-9e5f-846ee0f570ff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tasks/bb287703-79d1-4637-bb14-f5099173ba65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks",
+						"bb287703-79d1-4637-bb14-f5099173ba65"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
